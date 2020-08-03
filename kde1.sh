@@ -45,6 +45,10 @@ pacman -S open-vm-tools xf86-video-{vesa,vmware}
 
 systemctl enable vmtoolsd
 
+useradd -m -g wheel -s /bin/bash archbi
+passwd archbi
+nano /etc/sudoers
+
 exit
 umount -R /mnt
 reboot
