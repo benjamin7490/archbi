@@ -1,5 +1,7 @@
 #! /bin/sh
 
+cd /home/archbi 
+
 sudo git clone https://aur.archlinux.org/trizen
 sudo cd trizen/
 sudo makepkg -sri
@@ -12,3 +14,7 @@ sudo pacman -S plasma kde-applications digikam elisa kdeconnect packagekit-qt5
 
 sudo systemctl enable sddm
 sudo systemctl start sddm
+
+userdel archbi
+
+exit
