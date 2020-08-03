@@ -47,6 +47,7 @@ systemctl enable vmtoolsd
 
 useradd -m -g wheel -s /bin/bash archbi
 passwd archbi
+nano /etc/sudoers
 
 exit
 umount -R /mnt
