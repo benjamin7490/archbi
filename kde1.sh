@@ -1,6 +1,6 @@
 #! /bin/sh
 
-pacman -Syy zip unzip p7zip vim mc alsa-utils syslog-ng mtools dosfstools lsb-release ntfs-3g exfat-utils bash-completion nano git wget
+pacman -Syy zip unzip p7zip vim mc alsa-utils syslog-ng mtools dosfstools lsb-release ntfs-3g exfat-utils bash-completion nano
 
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
