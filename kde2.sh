@@ -1,12 +1,10 @@
 #! /bin/sh
 
-sudo git clone https://aur.archlinux.org/adduser.git
-cd adduser/
-makepkg -sri
-
 sudo git clone https://aur.archlinux.org/trizen
 cd trizen/
 makepkg -sri
+
+sudo trizen -Syy adduser
 
 sudo localectl set-x11-keymap fr
 
