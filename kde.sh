@@ -2,7 +2,6 @@
 
 cfdisk
 
-mkfs.ext4 /dev/sda1
-mkfs.fat -F32 /dev/sda2
-mkswap /dev/sda3
-swapon /dev/sda3
+nano /etc/pacman.d/mirrorlist
+
+pacstrap /mnt base base-devel pacman-contrib linux linux-headers linux-firmaware nano git wget
