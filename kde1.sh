@@ -27,10 +27,10 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 passwd root
 
+nano /etc/pacman.conf
+
 pacman -Syy networkmanager
 systemctl enable NetworkManager
-
-nano /etc/pacman.conf
 
 pacman -S ntp cronie
 
