@@ -1,8 +1,8 @@
 #! /bin/sh
 
 sudo git clone https://aur.archlinux.org/trizen
-cd trizen/
-makepkg -sri
+sudo cd trizen/
+sudo makepkg -sri
 
 sudo trizen -Syy adduser
 
